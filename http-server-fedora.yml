@@ -1,6 +1,7 @@
 - name: Setup HTTP Server
   hosts: main-server
   user: fedora
+  become: yes
 
   tasks:
 
@@ -8,11 +9,9 @@
       dnf:
         name: httpd
         state: latest
-      become: true
 
     - service:
         name: httpd
         state: started
-      become: true
 
   # Add your tasks here
