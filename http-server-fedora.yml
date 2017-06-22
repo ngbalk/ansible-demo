@@ -1,12 +1,12 @@
 - name: Setup HTTP Server
   hosts: main-server
-  user: fedora
+  user: nbalkiss 
   become: yes
 
   tasks:
 
     - name: install the latest version of Apache server
-      dnf:
+      yum:
         name: httpd
         state: latest
 

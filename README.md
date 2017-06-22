@@ -1,21 +1,16 @@
 # ACE Ansible Demo
 
-###### 1) Get on Red Hat VPN
-
-###### 2) Configure your inventory
+###### 1) Configure your inventory
 
 Add your server's ip address to your inventory file (this file is called 'inventory').  One of the following will be assigned to you:
 
-1.	10.3.11.63
-2.	10.3.11.82
-3.	10.3.9.111
-4.	10.3.11.58
-5.	10.3.10.56
-6.	10.3.11.85
-7.	10.3.11.79
-8.	10.3.11.84
-9.	10.3.11.76
-10.	10.3.11.70
+
+1.	104.196.177.189 
+2.	35.190.129.186 	
+3.	35.185.33.24 	
+4.	35.185.50.211 	
+5.	104.196.24.249 	
+6.	35.190.151.175
 
 Your inventory file should like like this, respectively:
 ```
@@ -28,7 +23,7 @@ Your inventory file should like like this, respectively:
 
 NOTE: When writing Ansible code, formatting is VERY important (remember, Ansible is written in YAML format).  I always use Sublime or Atom, but vim or vi is good too if you're comfortable with it.
 
-###### 3) Run your playbook
+###### 2) Run your playbook
 
 ```sh
 ansible-playbook --private-key id_rsa -i inventory http-server-fedora.yml
